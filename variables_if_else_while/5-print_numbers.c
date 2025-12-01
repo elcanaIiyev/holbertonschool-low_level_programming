@@ -1,4 +1,4 @@
-#include <stdio.ih>
+#include <stdio.h>
 /**
  * main - entry point of all c programs
  *
