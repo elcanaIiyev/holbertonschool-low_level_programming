@@ -5,7 +5,7 @@
 /**
  * main - is the entry point of every c program
  *
- * Return - returns 0 if the program runs succesfully
+ * Return: returns 0 if the program runs succesfully
  */
 int main(void)
 {
