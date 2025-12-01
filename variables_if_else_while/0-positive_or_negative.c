@@ -4,7 +4,8 @@
 /**
  * main - entry point of the program
  *
- * Return: to return successfully  */
+ * Return: to return successfully
+ * */
 int main(void)
 {
 	int n;
