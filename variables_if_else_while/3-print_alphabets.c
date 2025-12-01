@@ -6,7 +6,8 @@ int main(void)
  * Return: return 0 if the program is successful
  */
 {
-	char letter = 'a', bletter = 'A'; 
+	char letter = 'a', bletter = 'A';
+
 	while (letter <= 'z')
 		putchar(letter++);
 	while (bletter <= 'Z')
