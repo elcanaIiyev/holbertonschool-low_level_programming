@@ -3,7 +3,7 @@ int main(void)
 /**
  * main - entry point of all c programs
  *
- * Return: return 0 if the program is successful
+ * Return: returns 0 if the program is successful
  */
 {
 	char letter = 'a', bletter = 'A';
