@@ -1,10 +1,10 @@
 #include <stdio.h>
-int main(void)
 /**
  * main - entry point of all c programs
  *
  * Return: returns 0 if the program is successful
  */
+int main(void)
 {
 	char letter = 'a', bletter = 'A';
 
