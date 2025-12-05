@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include "main.h"
 
-/** 
+/**
  * main - entry point
  * Return: 0 if successful
  */
 
-int main(void) 
+int main(void)
 {
 	_putchar('_');
 	_putchar('p');
