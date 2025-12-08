@@ -6,7 +6,7 @@
  * Return: 0 if successful
  */
 
-int _strlen(char *s);
+int _strlen(char *s)
 {
 	return _strlen(0);
 }
