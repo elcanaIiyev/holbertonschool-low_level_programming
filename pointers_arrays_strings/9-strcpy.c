@@ -2,6 +2,7 @@
 
 /**
  * _strcpy - entry point
+ * Return: dest if successful
  * @dest: parameter
  * @src: parameter
  */
@@ -18,5 +19,6 @@ char *_strcpy(char *dest, char *src)
 		len++;
 		i++;
 	}
+	return (dest);
 	
 }
