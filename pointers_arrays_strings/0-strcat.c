@@ -2,8 +2,12 @@
 
 /**
  * _strcat - entry point
+ *
  * @dest: parameter dest
+ *
  * @src: parameter src
+ *
+ * Return: dest if successful
  */
 
 char *_strcat(char *dest, char *src)
