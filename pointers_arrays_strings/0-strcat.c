@@ -2,7 +2,7 @@
 
 /**
  * _strcat - entry point
- * @dest: parameter dest 
+ * @dest: parameter dest
  * @src: parameter src
  */
 
