@@ -2,7 +2,7 @@
 
 /**
  * leet - entry point
- * @s - string
+ * @s: string
  * Return: s if successful
  */
 
@@ -20,8 +20,8 @@ char *leet(char *s)
 			if (s[i] == arr[j] || (s[i] + 32) == arr[j])
 			{
 				s[i] = j + '0';
-				j++;
 			}
+			j++;
 		}
 		i++;
 	}
