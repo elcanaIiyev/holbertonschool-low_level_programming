@@ -1,30 +1,27 @@
 #include "main.h"
-
 /**
- * _strspn - returns if s has accept
- * @s: string
- * @accept: initial segment of s
- * Return: result
+ * _strpbrk - searches a string for any of a set of bytes
+ * @s: the string to be searched
+ * @accept: the string containing the bytes to match
+ *
+ * Return: a pointer to the byte in s that matches one of the bytes in accept,
+ *         or NULL if no such byte is found
  */
-
-unsigned int _strspn(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
-	unsigned int result = 0;
-	int j;
+	char *a;
 
 	while (*s)
 	{
-		for (j = 0; accept[j]; j++)
+		a = accept;
+		while (*a)
 		{
-			if (*s == accept[j])
-			{
-				result++;
-				break;
-			}
-			else if (accept[j + 1] == '\0')
-				return (result);
+			if (*s == *a)
+				return (s);
+			a++;
 		}
 		s++;
 	}
-	return (result);
+	return ('\0');
 }
+
