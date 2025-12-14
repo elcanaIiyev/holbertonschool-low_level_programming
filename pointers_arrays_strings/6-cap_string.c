@@ -1,6 +1,15 @@
+#include "main.h"
+
+/**
+ * cap_string - entry point
+ * @str: string
+ * Return: str if successful
+ */
+
 char *cap_string(char *str)
 {
 	int i = 0;
+
 	while (str[i])
 	{
 		while (!(str[i] >= 'a' && str[i] <= 'z'))
