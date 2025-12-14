@@ -6,7 +6,7 @@
  * Return: str if successful
  */
 
-char *string_toupper(char *str);
+char *string_toupper(char *str)
 {
 	int i = 0, j = 0;
 
