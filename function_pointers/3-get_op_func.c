@@ -2,60 +2,26 @@
 #include <stdlib.h>
 
 /**
- * op_add - sum of two integers
- * @a: number 1
- * @b: number 2
- * Return: sum of two integers
+ * get_op_func - convert given string to matching operator
+ * @s: string
+ *
+ * Return: returns operator function
  */
 
-int op_add(int a, int b)
+
+int (*get_op_func(char *s))(int, int)
 {
-	return (a + b);
-}
+	op_t ops[] = {
+	{"+", op_add},
+	{"-", op_sub},
+	{"*", op_mul},
+	{"/", op_div},
+	{"%", op_mod},
+	{NULL, NULL}
+	};
+	int i = 0;
 
-/**
- * op_sub - differ of two integers
- * @a: number 1
- * @b: number 2
- * Return: difference of two integer
- */
-
-int op_sub(int a, int b)
-{
-	return (a - b);
-}
-
-/**
- * op_mul - multiplies two integer
- * @a: number 1
- * @b: number 2
- * Return: Production of two integers
- */
-
-int op_mul(int a, int b)
-{
-	return (a * b);
-}
-
-/**
- * op_div - divides two integers
- * @a: number 1
- * @b: number 2
- * Return: div of two integers
- */
-
-int op_div(int a, int b)
-{
-	return (a / b);
-}
-
-/**
- * op_mod - modul of two integers
- * @a: number 1
- * @b: number 2
- * Return: mods two integers
- */
-int op_mod(int a, int b)
-{
-	return (a % b);
+	while (ops[i].op != NULL && *(ops[i].op) != *s)
+		i++;
+	return (ops[i].f);
 }
